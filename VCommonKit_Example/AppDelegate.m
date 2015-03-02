@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "VEMenuController.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +15,12 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    self.window = [[UIWindow alloc] initWithFrame:rect];
+    [self.window makeKeyAndVisible];
+    VEMenuController *menuController = [[VEMenuController alloc] init];
+    self.window.rootViewController = menuController;
     return YES;
 }
 
