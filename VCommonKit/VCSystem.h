@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@interface VCSystem : NSObject
+
+//唯一标示符
+
++ (NSString *)openUDID;
+
++ (NSString *)localUUID;
+
+@end
+
 /*
  *  System Versioning Preprocessor Macros
  */
@@ -17,9 +27,3 @@
 #define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
-
-@interface VCSystem : NSObject
-
-
-
-@end

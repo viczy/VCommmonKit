@@ -7,7 +7,8 @@
 //
 
 #import "NSString+VCommon.h"
-#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonDigest.h>、
+#import "NSDate+VCommon.h"
 
 @implementation NSString (VCommon)
 
@@ -75,6 +76,28 @@
         string = [string stringByReplacingOccurrencesOfString:@"&quot;" withString:@"\""];
     }
     return string;
+}
+
+/**
+ * @brief
+ *
+ * Detailed
+ * @param[in] NSFormatter
+ * @param[out] N/A
+ * @return BOOL
+ * @note
+ */
+
+- (BOOL)earlierToNowWithFormat:(NSString*)format {
+    NSDateFormatter *formatter = [NSDate defaultFormatter];
+    [formatter setDateFormat:format];
+    NSDate *now = [NSDate date];
+    NSDate *date = [formatter dateFromString:self];
+    if ([now compare:date] == NSOrderedAscending) {
+        return YES;
+    }else {
+        return NO;
+    }
 }
 
 @end

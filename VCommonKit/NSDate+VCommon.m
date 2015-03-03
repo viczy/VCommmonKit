@@ -10,6 +10,14 @@
 
 @implementation NSDate (VCommon)
 
++ (NSDateFormatter *)defaultFormatter {
+    NSDateFormatter *formatter =[[NSDateFormatter alloc] init];
+    formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
+    formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'";
+    return formatter;
+}
+
+
 /**
  * @brief 获取系统时间方法
  *  format:MM与mm，HH与hh区分（NSDate与NSString之间的互相转换通过NSDateFormatter）
@@ -20,12 +28,13 @@
  * @note
  */
 + (NSString *)systemTimeWithFormat:(NSString *)format {
-    NSDateFormatter *formatter =[[NSDateFormatter alloc] init];
+    NSDateFormatter *formatter = [self defaultFormatter];
+    [formatter setDateFormat:format];
     NSDate *date = [NSDate date];
     [[NSDate date] timeIntervalSince1970];
-    [formatter setDateFormat:format];
     NSString *returnTime = [formatter stringFromDate:date];
     return returnTime;
 }
+
 
 @end

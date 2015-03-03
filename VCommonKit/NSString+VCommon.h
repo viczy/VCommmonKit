@@ -18,4 +18,7 @@
 //网页特殊字符处理
 - (NSString*)specialCharReplace;
 
+//时间比较
+- (BOOL)earlierToNowWithFormat:(NSString*)format;
+
 @end

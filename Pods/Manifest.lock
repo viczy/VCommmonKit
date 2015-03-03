@@ -1,10 +1,13 @@
 PODS:
   - Masonry (0.6.1)
+  - OpenUDID (1.0.0)
 
 DEPENDENCIES:
   - Masonry
+  - OpenUDID
 
 SPEC CHECKSUMS:
   Masonry: 2cb49fd14d203d2db5ca6bb017135b235dde9980
+  OpenUDID: 5a23b7477755efc2d7871b57aa79ba3089c40b74
 
 COCOAPODS: 0.35.0

@@ -10,6 +10,10 @@
 
 @interface NSDate (VCommon)
 
+//默认dateformater
++ (NSDateFormatter *)defaultFormatter;
+
+//获取当前时间
 + (NSString *)systemTimeWithFormat:(NSString *)format;
 
 @end
