@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		259BEBFD5B9BC4CAD0369FD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 433C81A5817FC9EBE6216DA5 /* libPods.a */; };
+		F98025011AA554B500099515 /* UIColor+VCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F98025001AA554B500099515 /* UIColor+VCommon.m */; };
+		F98025041AA554F400099515 /* NSString+VCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F98025031AA554F400099515 /* NSString+VCommon.m */; };
+		F98025091AA5601000099515 /* VCOpenURL.m in Sources */ = {isa = PBXBuildFile; fileRef = F98025081AA5601000099515 /* VCOpenURL.m */; };
+		F980250C1AA560D400099515 /* VCSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F980250B1AA560D400099515 /* VCSystem.m */; };
+		F980250F1AA562C100099515 /* NSDate+VCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F980250E1AA562C100099515 /* NSDate+VCommon.m */; };
 		F9E7E9FD1AA40B2400840E50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7E9FC1AA40B2400840E50 /* main.m */; };
 		F9E7EA001AA40B2400840E50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7E9FF1AA40B2400840E50 /* AppDelegate.m */; };
 		F9E7EA031AA40B2400840E50 /* VEMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7EA021AA40B2400840E50 /* VEMenuController.m */; };
@@ -20,6 +25,16 @@
 		5D36CEE8E6E9A14EE3BC3879 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		836CFC2A84C1CBC348FDBCF0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F94089AB1AA45616006593EB /* VEPrefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VEPrefix.pch; sourceTree = "<group>"; };
+		F98024FF1AA554B500099515 /* UIColor+VCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+VCommon.h"; sourceTree = "<group>"; };
+		F98025001AA554B500099515 /* UIColor+VCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+VCommon.m"; sourceTree = "<group>"; };
+		F98025021AA554F400099515 /* NSString+VCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+VCommon.h"; sourceTree = "<group>"; };
+		F98025031AA554F400099515 /* NSString+VCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+VCommon.m"; sourceTree = "<group>"; };
+		F98025071AA5601000099515 /* VCOpenURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCOpenURL.h; sourceTree = "<group>"; };
+		F98025081AA5601000099515 /* VCOpenURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCOpenURL.m; sourceTree = "<group>"; };
+		F980250A1AA560D400099515 /* VCSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSystem.h; sourceTree = "<group>"; };
+		F980250B1AA560D400099515 /* VCSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSystem.m; sourceTree = "<group>"; };
+		F980250D1AA562C100099515 /* NSDate+VCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+VCommon.h"; sourceTree = "<group>"; };
+		F980250E1AA562C100099515 /* NSDate+VCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+VCommon.m"; sourceTree = "<group>"; };
 		F9E7E9F71AA40B2400840E50 /* VCommonKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCommonKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9E7E9FC1AA40B2400840E50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F9E7E9FE1AA40B2400840E50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +74,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F98024F91AA54BD800099515 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F98024FA1AA54EFE00099515 /* Menu */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F98024FA1AA54EFE00099515 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F9E7EA011AA40B2400840E50 /* VEMenuController.h */,
+				F9E7EA021AA40B2400840E50 /* VEMenuController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F98024FB1AA54FFE00099515 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F98024FF1AA554B500099515 /* UIColor+VCommon.h */,
+				F98025001AA554B500099515 /* UIColor+VCommon.m */,
+				F98025021AA554F400099515 /* NSString+VCommon.h */,
+				F98025031AA554F400099515 /* NSString+VCommon.m */,
+				F980250D1AA562C100099515 /* NSDate+VCommon.h */,
+				F980250E1AA562C100099515 /* NSDate+VCommon.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F98025051AA55F9900099515 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F98025071AA5601000099515 /* VCOpenURL.h */,
+				F98025081AA5601000099515 /* VCOpenURL.m */,
+				F980250A1AA560D400099515 /* VCSystem.h */,
+				F980250B1AA560D400099515 /* VCSystem.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		F9E7E9EE1AA40B2400840E50 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				F9E7EA221AA414A500840E50 /* Application */,
-				F9E7EA011AA40B2400840E50 /* VEMenuController.h */,
-				F9E7EA021AA40B2400840E50 /* VEMenuController.m */,
+				F98024F91AA54BD800099515 /* Controllers */,
 				F9E7E9FA1AA40B2400840E50 /* Supporting Files */,
 			);
 			path = VCommonKit_Example;
@@ -101,6 +156,8 @@
 		F9E7EA201AA40C3500840E50 /* VCommonKit */ = {
 			isa = PBXGroup;
 			children = (
+				F98025051AA55F9900099515 /* Common */,
+				F98024FB1AA54FFE00099515 /* Categories */,
 			);
 			path = VCommonKit;
 			sourceTree = "<group>";
@@ -229,8 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F98025041AA554F400099515 /* NSString+VCommon.m in Sources */,
+				F98025011AA554B500099515 /* UIColor+VCommon.m in Sources */,
 				F9E7EA031AA40B2400840E50 /* VEMenuController.m in Sources */,
 				F9E7EA001AA40B2400840E50 /* AppDelegate.m in Sources */,
+				F980250F1AA562C100099515 /* NSDate+VCommon.m in Sources */,
+				F98025091AA5601000099515 /* VCOpenURL.m in Sources */,
+				F980250C1AA560D400099515 /* VCSystem.m in Sources */,
 				F9E7E9FD1AA40B2400840E50 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

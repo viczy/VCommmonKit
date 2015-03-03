@@ -8,7 +8,13 @@
 
 #import "VEMenuController.h"
 
+typedef enum {
+    menuIndexColor,
+}menuIndex;
+
 @interface VEMenuController ()
+
+@property (nonatomic, strong) NSMutableArray *menuArray;
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -36,6 +42,13 @@
 
 #pragma mark - Getter
 
+- (NSMutableArray *)menuArray {
+    if (!_menuArray) {
+        _menuArray = [[NSMutableArray alloc] initWithCapacity:1];
+    }
+    return _menuArray;
+}
+
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
@@ -47,7 +60,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     WS(ws);
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -60,6 +72,49 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - TableView
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return self.menuArray.count;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *const cellIndificater = @"menuCellIndificater";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndificater];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndificater];
+        cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    }
+
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 44.f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+
+        case menuIndexColor: {
+            break;
+        }
+
+        default:
+            break;
+    }
+}
 
 
 @end
