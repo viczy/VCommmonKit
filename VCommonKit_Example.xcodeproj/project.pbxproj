@@ -20,6 +20,13 @@
 		F9E7EA271AA415D600840E50 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E7EA251AA415D600840E50 /* Info.plist */; };
 		F9FC5D191AA8410C00F06208 /* VCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D181AA8410C00F06208 /* VCFileManager.m */; };
 		F9FC5D1C1AA8453600F06208 /* UIImage+VCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D1B1AA8453600F06208 /* UIImage+VCommon.m */; };
+		F9FC5D281AA851D000F06208 /* VEColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D271AA851D000F06208 /* VEColorController.m */; };
+		F9FC5D2B1AA851F900F06208 /* VEStringController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D2A1AA851F900F06208 /* VEStringController.m */; };
+		F9FC5D2E1AA8520C00F06208 /* VEDateController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D2D1AA8520C00F06208 /* VEDateController.m */; };
+		F9FC5D311AA8521D00F06208 /* VEImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D301AA8521D00F06208 /* VEImageController.m */; };
+		F9FC5D341AA8523100F06208 /* VEOpenUrlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D331AA8523100F06208 /* VEOpenUrlController.m */; };
+		F9FC5D371AA8524300F06208 /* VESystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D361AA8524300F06208 /* VESystemController.m */; };
+		F9FC5D3A1AA8525600F06208 /* VEFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D391AA8525600F06208 /* VEFileManagerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +56,20 @@
 		F9FC5D181AA8410C00F06208 /* VCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFileManager.m; sourceTree = "<group>"; };
 		F9FC5D1A1AA8453600F06208 /* UIImage+VCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VCommon.h"; sourceTree = "<group>"; };
 		F9FC5D1B1AA8453600F06208 /* UIImage+VCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VCommon.m"; sourceTree = "<group>"; };
+		F9FC5D261AA851D000F06208 /* VEColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEColorController.h; sourceTree = "<group>"; };
+		F9FC5D271AA851D000F06208 /* VEColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEColorController.m; sourceTree = "<group>"; };
+		F9FC5D291AA851F900F06208 /* VEStringController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEStringController.h; sourceTree = "<group>"; };
+		F9FC5D2A1AA851F900F06208 /* VEStringController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEStringController.m; sourceTree = "<group>"; };
+		F9FC5D2C1AA8520C00F06208 /* VEDateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEDateController.h; sourceTree = "<group>"; };
+		F9FC5D2D1AA8520C00F06208 /* VEDateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEDateController.m; sourceTree = "<group>"; };
+		F9FC5D2F1AA8521D00F06208 /* VEImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEImageController.h; sourceTree = "<group>"; };
+		F9FC5D301AA8521D00F06208 /* VEImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEImageController.m; sourceTree = "<group>"; };
+		F9FC5D321AA8523100F06208 /* VEOpenUrlController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEOpenUrlController.h; sourceTree = "<group>"; };
+		F9FC5D331AA8523100F06208 /* VEOpenUrlController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEOpenUrlController.m; sourceTree = "<group>"; };
+		F9FC5D351AA8524300F06208 /* VESystemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VESystemController.h; sourceTree = "<group>"; };
+		F9FC5D361AA8524300F06208 /* VESystemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VESystemController.m; sourceTree = "<group>"; };
+		F9FC5D381AA8525600F06208 /* VEFileManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEFileManagerController.h; sourceTree = "<group>"; };
+		F9FC5D391AA8525600F06208 /* VEFileManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEFileManagerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +105,13 @@
 			isa = PBXGroup;
 			children = (
 				F98024FA1AA54EFE00099515 /* Menu */,
+				F9FC5D251AA8517B00F06208 /* Color */,
+				F9FC5D241AA8517900F06208 /* String */,
+				F9FC5D231AA8517600F06208 /* Date */,
+				F9FC5D221AA8517400F06208 /* Image */,
+				F9FC5D211AA8517100F06208 /* OpenUrl */,
+				F9FC5D201AA8516E00F06208 /* System */,
+				F9FC5D1F1AA8516C00F06208 /* FileManager */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +217,69 @@
 				F94089AB1AA45616006593EB /* VEPrefix.pch */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		F9FC5D1F1AA8516C00F06208 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D381AA8525600F06208 /* VEFileManagerController.h */,
+				F9FC5D391AA8525600F06208 /* VEFileManagerController.m */,
+			);
+			name = FileManager;
+			sourceTree = "<group>";
+		};
+		F9FC5D201AA8516E00F06208 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D351AA8524300F06208 /* VESystemController.h */,
+				F9FC5D361AA8524300F06208 /* VESystemController.m */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		F9FC5D211AA8517100F06208 /* OpenUrl */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D321AA8523100F06208 /* VEOpenUrlController.h */,
+				F9FC5D331AA8523100F06208 /* VEOpenUrlController.m */,
+			);
+			name = OpenUrl;
+			sourceTree = "<group>";
+		};
+		F9FC5D221AA8517400F06208 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D2F1AA8521D00F06208 /* VEImageController.h */,
+				F9FC5D301AA8521D00F06208 /* VEImageController.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		F9FC5D231AA8517600F06208 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D2C1AA8520C00F06208 /* VEDateController.h */,
+				F9FC5D2D1AA8520C00F06208 /* VEDateController.m */,
+			);
+			name = Date;
+			sourceTree = "<group>";
+		};
+		F9FC5D241AA8517900F06208 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D291AA851F900F06208 /* VEStringController.h */,
+				F9FC5D2A1AA851F900F06208 /* VEStringController.m */,
+			);
+			name = String;
+			sourceTree = "<group>";
+		};
+		F9FC5D251AA8517B00F06208 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D261AA851D000F06208 /* VEColorController.h */,
+				F9FC5D271AA851D000F06208 /* VEColorController.m */,
+			);
+			name = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,15 +388,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98025041AA554F400099515 /* NSString+VCommon.m in Sources */,
+				F9FC5D2B1AA851F900F06208 /* VEStringController.m in Sources */,
 				F98025011AA554B500099515 /* UIColor+VCommon.m in Sources */,
+				F9FC5D371AA8524300F06208 /* VESystemController.m in Sources */,
 				F9E7EA031AA40B2400840E50 /* VEMenuController.m in Sources */,
 				F9E7EA001AA40B2400840E50 /* AppDelegate.m in Sources */,
 				F980250F1AA562C100099515 /* NSDate+VCommon.m in Sources */,
+				F9FC5D311AA8521D00F06208 /* VEImageController.m in Sources */,
+				F9FC5D2E1AA8520C00F06208 /* VEDateController.m in Sources */,
+				F9FC5D341AA8523100F06208 /* VEOpenUrlController.m in Sources */,
 				F98025091AA5601000099515 /* VCOpenURL.m in Sources */,
 				F9FC5D191AA8410C00F06208 /* VCFileManager.m in Sources */,
+				F9FC5D3A1AA8525600F06208 /* VEFileManagerController.m in Sources */,
 				F980250C1AA560D400099515 /* VCSystem.m in Sources */,
 				F9E7E9FD1AA40B2400840E50 /* main.m in Sources */,
 				F9FC5D1C1AA8453600F06208 /* UIImage+VCommon.m in Sources */,
+				F9FC5D281AA851D000F06208 /* VEColorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

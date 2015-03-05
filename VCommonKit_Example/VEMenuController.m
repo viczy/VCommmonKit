@@ -12,7 +12,9 @@ typedef enum {
     menuIndexColor,
 }menuIndex;
 
-@interface VEMenuController ()
+@interface VEMenuController () <
+    UITableViewDataSource,
+    UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray *menuArray;
 
@@ -52,6 +54,8 @@ typedef enum {
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
     }
     return _tableView;
 }
@@ -60,11 +64,13 @@ typedef enum {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     WS(ws);
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(ws.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
+        make.edges.equalTo(ws.view).with.insets(UIEdgeInsetsMake(20, 0, 0, 0));
     }];
+    [self.menuArray addObjectsFromArray:@[@"Color", @"String", @"Date", @"Image", @"OpenUrl", @"System", @"FileManager"]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -94,6 +100,7 @@ typedef enum {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndificater];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
     }
+    cell.textLabel.text = self.menuArray[indexPath.row];
 
     return cell;
 }
