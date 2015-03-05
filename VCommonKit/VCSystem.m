@@ -14,21 +14,6 @@ static NSString *const UUIDKey = @"localUUID";
 @implementation VCSystem
 
 /**
- * @brief 系统重置会改变,需要podfile添加：pod "OpenUDID"
- *
- * Detailed
- * @param[in]  N/A
- * @param[out] N/A
- * @return  UDID
- * @note
- */
-
-+ (NSString *)openUDID {
-    NSString *openUDID = [OpenUDID value];
-    return openUDID;
-}
-
-/**
  * @brief 需本地存储
  *
  * Detailed
@@ -49,6 +34,20 @@ static NSString *const UUIDKey = @"localUUID";
         [userDefaults synchronize];
     }
     return uuid;
+}
+
+/**
+ * @brief 需安装第三方库：pod "OpenUDID"
+ *
+ * Detailed
+ * @param[in]  N/A
+ * @param[out] N/A
+ * @return  UUID
+ * @note
+ */
+
++ (NSString*)openUDID {
+    return [OpenUDID value];
 }
 
 @end

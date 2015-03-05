@@ -11,10 +11,9 @@
 @interface VCSystem : NSObject
 
 //唯一标示符
-
-+ (NSString *)openUDID;
-
 + (NSString *)localUUID;
+
++ (NSString*)openUDID;
 
 @end
 

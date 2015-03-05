@@ -21,4 +21,10 @@
 //时间比较
 - (BOOL)earlierToNowWithFormat:(NSString*)format;
 
+- (BOOL)earlierToDate:(NSDate*)date withFormat:(NSString *)format;
+
+- (BOOL)earlierToString:(NSString*)dateString stringFormat:(NSString *)format selfFormat:(NSString *)format;
+
+
+
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "NSString+VCommon.h"
-#import <CommonCrypto/CommonDigest.h>、
+#import <CommonCrypto/CommonDigest.h>
 #import "NSDate+VCommon.h"
 
 @implementation NSString (VCommon)
@@ -80,9 +80,9 @@
 
 /**
  * @brief
- *
+ *  与系统时间作比较
  * Detailed
- * @param[in] NSFormatter
+ * @param[in] format
  * @param[out] N/A
  * @return BOOL
  * @note
@@ -92,8 +92,54 @@
     NSDateFormatter *formatter = [NSDate defaultFormatter];
     [formatter setDateFormat:format];
     NSDate *now = [NSDate date];
-    NSDate *date = [formatter dateFromString:self];
-    if ([now compare:date] == NSOrderedAscending) {
+    NSDate *selfDate = [formatter dateFromString:self];
+    if ([now compare:selfDate] == NSOrderedAscending) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
+/**
+ * @brief
+ *  与Date作比较
+ * Detailed
+ * @param[in] date, format
+ * @param[out] N/A
+ * @return BOOL
+ * @note
+ */
+
+- (BOOL)earlierToDate:(NSDate*)date withFormat:(NSString *)format {
+    NSDateFormatter *formatter = [NSDate defaultFormatter];
+    [formatter setDateFormat:format];
+    NSDate *selfDate = [formatter dateFromString:self];
+    if ([date compare:selfDate] == NSOrderedAscending) {
+        return YES;
+    }else {
+        return NO;
+    }
+}
+
+/**
+ * @brief
+ *  与Date作比较
+ * Detailed
+ * @param[in] string, format, format
+ * @param[out] N/A
+ * @return BOOL
+ * @note
+ */
+
+- (BOOL)earlierToString:(NSString*)dateString stringFormat:(NSString *)stringFormat selfFormat:(NSString *)selfFormat {
+    NSDateFormatter *selfFormatter = [NSDate defaultFormatter];
+    [selfFormatter setDateFormat:selfFormat];
+    NSDate *selfDate = [selfFormatter dateFromString:self];
+
+    NSDateFormatter *stringFormatter = [NSDate defaultFormatter];
+    [stringFormatter setDateFormat:selfFormat];
+    NSDate *stringDate = [selfFormatter dateFromString:self];
+    if ([stringDate compare:selfDate] == NSOrderedAscending) {
         return YES;
     }else {
         return NO;
