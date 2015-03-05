@@ -27,6 +27,7 @@
 		F9FC5D341AA8523100F06208 /* VEOpenUrlController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D331AA8523100F06208 /* VEOpenUrlController.m */; };
 		F9FC5D371AA8524300F06208 /* VESystemController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D361AA8524300F06208 /* VESystemController.m */; };
 		F9FC5D3A1AA8525600F06208 /* VEFileManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D391AA8525600F06208 /* VEFileManagerController.m */; };
+		F9FC5D3E1AA8555800F06208 /* VEBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D3D1AA8555800F06208 /* VEBaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		F9FC5D361AA8524300F06208 /* VESystemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VESystemController.m; sourceTree = "<group>"; };
 		F9FC5D381AA8525600F06208 /* VEFileManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEFileManagerController.h; sourceTree = "<group>"; };
 		F9FC5D391AA8525600F06208 /* VEFileManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEFileManagerController.m; sourceTree = "<group>"; };
+		F9FC5D3C1AA8555800F06208 /* VEBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VEBaseController.h; sourceTree = "<group>"; };
+		F9FC5D3D1AA8555800F06208 /* VEBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VEBaseController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		F98024F91AA54BD800099515 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F9FC5D3B1AA8553D00F06208 /* Base */,
 				F98024FA1AA54EFE00099515 /* Menu */,
 				F9FC5D251AA8517B00F06208 /* Color */,
 				F9FC5D241AA8517900F06208 /* String */,
@@ -282,6 +286,15 @@
 			name = Color;
 			sourceTree = "<group>";
 		};
+		F9FC5D3B1AA8553D00F06208 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F9FC5D3C1AA8555800F06208 /* VEBaseController.h */,
+				F9FC5D3D1AA8555800F06208 /* VEBaseController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -396,6 +409,7 @@
 				F980250F1AA562C100099515 /* NSDate+VCommon.m in Sources */,
 				F9FC5D311AA8521D00F06208 /* VEImageController.m in Sources */,
 				F9FC5D2E1AA8520C00F06208 /* VEDateController.m in Sources */,
+				F9FC5D3E1AA8555800F06208 /* VEBaseController.m in Sources */,
 				F9FC5D341AA8523100F06208 /* VEOpenUrlController.m in Sources */,
 				F98025091AA5601000099515 /* VCOpenURL.m in Sources */,
 				F9FC5D191AA8410C00F06208 /* VCFileManager.m in Sources */,

@@ -20,7 +20,8 @@
     self.window = [[UIWindow alloc] initWithFrame:rect];
     [self.window makeKeyAndVisible];
     VEMenuController *menuController = [[VEMenuController alloc] init];
-    self.window.rootViewController = menuController;
+    UINavigationController *menuNav = [[UINavigationController alloc] initWithRootViewController:menuController];
+    self.window.rootViewController = menuNav;
     return YES;
 }
 

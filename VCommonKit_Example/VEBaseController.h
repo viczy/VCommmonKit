@@ -1,13 +1,13 @@
 //
-//  VEFileManagerController.h
+//  VEBaseController.h
 //  VCommonKit_Example
 //
 //  Created by Vic Zhou on 3/5/15.
 //  Copyright (c) 2015 everycode. All rights reserved.
 //
 
-#import "VEBaseController.h"
+#import <UIKit/UIKit.h>
 
-@interface VEFileManagerController : VEBaseController
+@interface VEBaseController : UIViewController
 
 @end

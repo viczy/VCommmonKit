@@ -7,9 +7,22 @@
 //
 
 #import "VEMenuController.h"
+#import "VEColorController.h"
+#import "VEStringController.h"
+#import "VEDateController.h"
+#import "VEImageController.h"
+#import "VEOpenUrlController.h"
+#import "VESystemController.h"
+#import "VEFileManagerController.h"
 
 typedef enum {
     menuIndexColor,
+    menuIndexString,
+    menuIndexDate,
+    menuIndexImage,
+    menuIndexOpenUrl,
+    menuIndexSystem,
+    menuIndexFileManager,
 }menuIndex;
 
 @interface VEMenuController () <
@@ -64,6 +77,7 @@ typedef enum {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Menu";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
     WS(ws);
@@ -112,15 +126,49 @@ typedef enum {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIViewController *controller;
     switch (indexPath.row) {
 
         case menuIndexColor: {
+            controller = [[VEColorController alloc] init];
+            break;
+        }
+
+        case menuIndexString: {
+            controller = [[VEStringController alloc] init];
+            break;
+        }
+
+        case menuIndexDate: {
+            controller = [[VEDateController alloc] init];
+            break;
+        }
+
+        case menuIndexImage: {
+            controller = [[VEImageController alloc] init];
+            break;
+        }
+
+        case menuIndexOpenUrl: {
+            controller = [[VEOpenUrlController alloc] init];
+            break;
+        }
+
+        case menuIndexSystem: {
+            controller = [[VESystemController alloc] init];
+            break;
+        }
+
+        case menuIndexFileManager: {
+            controller = [[VEFileManagerController alloc] init];
             break;
         }
 
         default:
             break;
     }
+
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 

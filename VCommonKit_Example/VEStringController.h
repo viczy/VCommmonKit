@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 everycode. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "VEBaseController.h"
 
-@interface VEStringController : UIViewController
+@interface VEStringController : VEBaseController
 
 @end
