@@ -10,13 +10,22 @@
 
 @implementation NSDate (VCommon)
 
+/**
+ * @brief
+ *  获取默认的DateFormatter
+ * Detailed
+ * @param[in] N/A
+ * @param[out] N/A
+ * @return  NSDateFormatter
+ * @note
+ */
+
 + (NSDateFormatter *)defaultFormatter {
     NSDateFormatter *formatter =[[NSDateFormatter alloc] init];
     formatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"zh_CN"];
     formatter.dateFormat = @"yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'";
     return formatter;
 }
-
 
 /**
  * @brief 获取系统时间方法

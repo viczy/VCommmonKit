@@ -18,6 +18,8 @@
 		F9E7EA031AA40B2400840E50 /* VEMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7EA021AA40B2400840E50 /* VEMenuController.m */; };
 		F9E7EA261AA415D600840E50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E7EA241AA415D600840E50 /* Images.xcassets */; };
 		F9E7EA271AA415D600840E50 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E7EA251AA415D600840E50 /* Info.plist */; };
+		F9FC5D191AA8410C00F06208 /* VCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D181AA8410C00F06208 /* VCFileManager.m */; };
+		F9FC5D1C1AA8453600F06208 /* UIImage+VCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D1B1AA8453600F06208 /* UIImage+VCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,10 @@
 		F9E7EA021AA40B2400840E50 /* VEMenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VEMenuController.m; sourceTree = "<group>"; };
 		F9E7EA241AA415D600840E50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F9E7EA251AA415D600840E50 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9FC5D171AA8410C00F06208 /* VCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCFileManager.h; sourceTree = "<group>"; };
+		F9FC5D181AA8410C00F06208 /* VCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCFileManager.m; sourceTree = "<group>"; };
+		F9FC5D1A1AA8453600F06208 /* UIImage+VCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+VCommon.h"; sourceTree = "<group>"; };
+		F9FC5D1B1AA8453600F06208 /* UIImage+VCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+VCommon.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,8 @@
 				F98025031AA554F400099515 /* NSString+VCommon.m */,
 				F980250D1AA562C100099515 /* NSDate+VCommon.h */,
 				F980250E1AA562C100099515 /* NSDate+VCommon.m */,
+				F9FC5D1A1AA8453600F06208 /* UIImage+VCommon.h */,
+				F9FC5D1B1AA8453600F06208 /* UIImage+VCommon.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -111,6 +119,8 @@
 				F98025081AA5601000099515 /* VCOpenURL.m */,
 				F980250A1AA560D400099515 /* VCSystem.h */,
 				F980250B1AA560D400099515 /* VCSystem.m */,
+				F9FC5D171AA8410C00F06208 /* VCFileManager.h */,
+				F9FC5D181AA8410C00F06208 /* VCFileManager.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -292,8 +302,10 @@
 				F9E7EA001AA40B2400840E50 /* AppDelegate.m in Sources */,
 				F980250F1AA562C100099515 /* NSDate+VCommon.m in Sources */,
 				F98025091AA5601000099515 /* VCOpenURL.m in Sources */,
+				F9FC5D191AA8410C00F06208 /* VCFileManager.m in Sources */,
 				F980250C1AA560D400099515 /* VCSystem.m in Sources */,
 				F9E7E9FD1AA40B2400840E50 /* main.m in Sources */,
+				F9FC5D1C1AA8453600F06208 /* UIImage+VCommon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

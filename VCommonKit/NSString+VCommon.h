@@ -25,6 +25,14 @@
 
 - (BOOL)earlierToString:(NSString*)dateString stringFormat:(NSString *)format selfFormat:(NSString *)format;
 
+//是否为国内手机号码
+- (BOOL)isPhoneNumber;
+
+//是否为邮箱
+- (BOOL)isEmail;
+
+//网址是否合法
+- (BOOL)isNetAddress;
 
 
 @end
