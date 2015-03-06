@@ -40,6 +40,7 @@
 - (UITextView*)textView {
     if (!_textView) {
         _textView = [[UITextView alloc] initWithFrame:self.view.bounds];
+        _textView.editable = NO;
         NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:@"+ (UIColor*)instanceWithString:(NSString*)rgba;\n\n+ (UIColor*)instanceWithIntRed:(NSInteger)red intGreen:(NSInteger)green intBlue:(NSInteger)blue andAlpha:(CGFloat)alpha;\n"];
         [attributedStr addAttribute:NSForegroundColorAttributeName value:[self color1] range:NSMakeRange(0, 47)];
         [attributedStr addAttribute:NSForegroundColorAttributeName value:[self color2] range:NSMakeRange(49, 120)];

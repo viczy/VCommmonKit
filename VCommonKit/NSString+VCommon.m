@@ -93,7 +93,7 @@
     [formatter setDateFormat:format];
     NSDate *now = [NSDate date];
     NSDate *selfDate = [formatter dateFromString:self];
-    if ([now compare:selfDate] == NSOrderedAscending) {
+    if ([selfDate compare:now] == NSOrderedAscending) {
         return YES;
     }else {
         return NO;
@@ -114,7 +114,7 @@
     NSDateFormatter *formatter = [NSDate defaultFormatter];
     [formatter setDateFormat:format];
     NSDate *selfDate = [formatter dateFromString:self];
-    if ([date compare:selfDate] == NSOrderedAscending) {
+    if ([selfDate compare:date] == NSOrderedAscending) {
         return YES;
     }else {
         return NO;
@@ -139,7 +139,7 @@
     NSDateFormatter *stringFormatter = [NSDate defaultFormatter];
     [stringFormatter setDateFormat:selfFormat];
     NSDate *stringDate = [selfFormatter dateFromString:self];
-    if ([stringDate compare:selfDate] == NSOrderedAscending) {
+    if ([selfDate compare:stringDate] == NSOrderedAscending) {
         return YES;
     }else {
         return NO;
