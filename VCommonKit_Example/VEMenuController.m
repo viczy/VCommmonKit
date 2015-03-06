@@ -75,15 +75,18 @@ typedef enum {
 
 #pragma mark - ViewLoad
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.title = @"Menu";
-    self.view.backgroundColor = [UIColor whiteColor];
+- (void)loadView {
+    [super loadView];
     [self.view addSubview:self.tableView];
     WS(ws);
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(ws.view).with.insets(UIEdgeInsetsMake(20, 0, 0, 0));
+        make.edges.equalTo(ws.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"Menu";
     [self.menuArray addObjectsFromArray:@[@"Color", @"String", @"Date", @"Image", @"OpenUrl", @"System", @"FileManager"]];
 }
 

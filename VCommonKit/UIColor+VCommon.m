@@ -20,7 +20,7 @@
  * @note
  */
 
-+ (UIColor*)initWithString:(NSString*)rgba {
++ (UIColor*)instanceWithString:(NSString*)rgba {
     CGFloat red = 0,green = 0,blue = 0,alpha = 1.0;
     if ([rgba hasPrefix:@"#"]) {
         // #rrggbb or #rrggbbaa
@@ -63,7 +63,7 @@
  * @note
  */
 
-+ (UIColor*)initWithIntRed:(NSInteger)red intGreen:(NSInteger)green intBlue:(NSInteger)blue andAlpha:(CGFloat)alpha {
++ (UIColor*)instanceWithIntRed:(NSInteger)red intGreen:(NSInteger)green intBlue:(NSInteger)blue andAlpha:(CGFloat)alpha {
     CGFloat fRed = (CGFloat)red/255.f;
     CGFloat fGreen = (CGFloat)green/255.f;
     CGFloat fBlue = (CGFloat)blue/255.f;

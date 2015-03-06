@@ -10,8 +10,8 @@
 
 @interface UIColor (VCommon)
 
-+ (UIColor*)initWithString:(NSString*)rgba;
++ (UIColor*)instanceWithString:(NSString*)rgba;
 
-+ (UIColor*)initWithIntRed:(NSInteger)red intGreen:(NSInteger)green intBlue:(NSInteger)blue andAlpha:(CGFloat)alpha;
++ (UIColor*)instanceWithIntRed:(NSInteger)red intGreen:(NSInteger)green intBlue:(NSInteger)blue andAlpha:(CGFloat)alpha;
 
 @end
