@@ -17,7 +17,6 @@
 		F9E7EA001AA40B2400840E50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7E9FF1AA40B2400840E50 /* AppDelegate.m */; };
 		F9E7EA031AA40B2400840E50 /* VEMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9E7EA021AA40B2400840E50 /* VEMenuController.m */; };
 		F9E7EA261AA415D600840E50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E7EA241AA415D600840E50 /* Images.xcassets */; };
-		F9E7EA271AA415D600840E50 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9E7EA251AA415D600840E50 /* Info.plist */; };
 		F9FC5D191AA8410C00F06208 /* VCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D181AA8410C00F06208 /* VCFileManager.m */; };
 		F9FC5D1C1AA8453600F06208 /* UIImage+VCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D1B1AA8453600F06208 /* UIImage+VCommon.m */; };
 		F9FC5D281AA851D000F06208 /* VEColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9FC5D271AA851D000F06208 /* VEColorController.m */; };
@@ -323,7 +322,7 @@
 		F9E7E9EF1AA40B2400840E50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = everycode;
 				TargetAttributes = {
 					F9E7E9F61AA40B2400840E50 = {
@@ -355,7 +354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E7EA271AA415D600840E50 /* Info.plist in Resources */,
 				F9E7EA261AA415D600840E50 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
